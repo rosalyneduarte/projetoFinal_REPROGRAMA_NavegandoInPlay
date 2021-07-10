@@ -1,354 +1,354 @@
 * {
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  ul {
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-  }
-  a{
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  
-  .container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 960px;
-  }
-  
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+.navegacao__itens {
+  display: none;
+}
+
+.navegacao__menu-hamburguer img {
+  border-radius: 2px;
+}
+
+/* --- BOTAO --- */
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn_roxo {
+  color: white;
+  background-color: #c083b9;
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+  transform: translateY(-06px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(192, 156, 188);
+}
+
+.btn_center {
+  margin: 0 auto;
+}
+
+/* HEADER  --- HEADER  --- HEADER */
+
+.header {
+  min-height: 40px;
+  height: 590px;
+  background: linear-gradient(rgba(0, 195, 255, 0.2), rgba(255, 0, 255, 0.2));
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #323534;
+  font-weight: bold;
+}
+
+.principal {
+  margin-bottom: 20px;
+}
+
+.principal__titulo {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* --- FOOTER --- */
+
+.rodape {
+  background-color: #323534;
+  color: white;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.rodape__principal {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.rodape__principal > * {
+  margin: 16px 0;
+}
+
+.rodape__navegacao > li {
+  font-size: 14px;
+  margin: 8px;
+}
+
+.rodape__navegacao a {
+  transition: all 0.5s;
+}
+
+.rodape__navegacao a:hover {
+  color: #c083b9;
+}
+
+.rodape__logo {
+  max-width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodape__redes-sociais-banner{
+background-color: #323534;
+text-align: center; 
+padding: 10px;
+}
+/*  --- TABLET --- --- TABLET --- */
+
+@media (min-width: 768px) {
+  /* --- NAV --- */
   .navegacao__itens {
-    display: none;
+    position: static;
+    display: flex;
+    padding: 0;
+    width: auto;
   }
-  
-  .navegacao__menu-hamburguer img {
-    border-radius: 2px;
+
+  .navegacao__nav {
+    color: #fff;
+    margin-bottom: 0;
   }
-  
-  /* --- BOTAO --- */
-  
-  .btn {
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 16px;
-    border-radius: 5px;
-    font-size: 14px;
+
+  .navegacao__itens ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
     text-align: center;
   }
-  
-  .btn_roxo {
-    color: white;
-    background-color: #c083b9;
+
+  .navegacao__itens li {
+    font-size: 14px;
+    margin: 0 9px;
+  }
+
+  .navegacao__itens.ativo {
     display: block;
-    max-width: 200px;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    background-color: #674582;
     text-align: center;
-    transition: all 0.5s;
-    margin: 0 auto;
+    padding: 48px 0;
+    transition: right 1s;
   }
-  
-  .btn_roxo:hover,
-  .btn_roxo:focus {
-    transform: translateY(-06px);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    background-color: rgb(192, 156, 188);
+
+  .navegacao__itens li > a {
+    transition: all 0.2s;
   }
-  
-  .btn_center {
-    margin: 0 auto;
-  }
-  
-  /* HEADER  --- HEADER  --- HEADER */
-  
-  .header {
-    min-height: 40px;
-    height: 590px;
-    background: linear-gradient(rgba(0, 195, 255, 0.2), rgba(255, 0, 255, 0.2));
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-    color: #323534;
-    font-weight: bold;
-  }
-  
-  .principal {
-    margin-bottom: 20px;
-  }
-  
-  .principal__titulo {
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  /* --- FOOTER --- */
-  
-  .rodape {
-    background-color: #323534;
-    color: white;
-    display: flex;
-  
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .rodape__principal {
-    display: inline-block;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .rodape__principal > * {
-    margin: 16px 0;
-  }
-  
-  .rodape__navegacao > li {
-    font-size: 14px;
-    margin: 8px;
-  }
-  
-  .rodape__navegacao a {
-    transition: all 0.5s;
-  }
-  
-  .rodape__navegacao a:hover {
+
+  .navegacao__itens li > a:hover {
     color: #c083b9;
   }
-  
-  .rodape__logo {
-    max-width: 200px;
-    align-items: center;
-    justify-content: center;
+
+  .navegacao__menu-hamburguer {
+    display: none;
   }
-  
-.rodape__redes-sociais-banner{
-  background-color: #323534;
-  text-align: center; 
-  padding: 10px;
-}
-  /*  --- TABLET --- --- TABLET --- */
-  
-  @media (min-width: 768px) {
-    /* --- NAV --- */
-    .navegacao__itens {
-      position: static;
-      display: flex;
-      padding: 0;
-      width: auto;
-    }
-  
-    .navegacao__nav {
-      color: #fff;
-      margin-bottom: 0;
-    }
-  
-    .navegacao__itens ul {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .navegacao__itens li {
-      font-size: 14px;
-      margin: 0 9px;
-    }
-  
-    .navegacao__itens.ativo {
-      display: block;
-      right: 0;
-      top: 85px;
-      width: 100%;
-      background-color: #674582;
-      text-align: center;
-      padding: 48px 0;
-      transition: right 1s;
-    }
-  
-    .navegacao__itens li > a {
-      transition: all 0.2s;
-    }
-  
-    .navegacao__itens li > a:hover {
-      color: #c083b9;
-    }
-  
-    .navegacao__menu-hamburguer {
-      display: none;
-    }
-  
-    /* --- HEADER --- */
-    .header {
-      min-height: 75vh;
-      text-align: left;
-      padding: 10px 100px;
-    }
-  
-    .principal__titulo {
-      font-size: 28px;
-    }
-  
-    .principal__sub {
-      font-size: 18px;
-    }
-  
-    .principal__btn {
-      margin: 0;
-        margin-left: 385px;
-      
-      }
+
+  /* --- HEADER --- */
+  .header {
+    min-height: 75vh;
+    text-align: left;
+    padding: 10px 100px;
+  }
+
+  .principal__titulo {
+    font-size: 28px;
+  }
+
+  .principal__sub {
+    font-size: 18px;
+  }
+
+  .principal__btn {
+    margin: 0;
+      margin-left: 385px;
     
-  
-    /* --- FOOTER --- */
-  
-    .rodape {
-      padding-top: 0;
     }
   
-    .rodape__principal {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .rodape__logo img {
-      max-width: 300px;
-    }
-  
-    .rodape__navegacao > li {
-      font-size: 14px;
-    }
-  
-    .rodape__redes-sociais img {
-      max-width: 45px;
-      margin-right: 8px;
-    }
+
+  /* --- FOOTER --- */
+
+  .rodape {
+    padding-top: 0;
   }
-  
-  /* --- DESKTOP--- --- DESKTOP--- --- DESKTOP--- --- DESKTOP---   */
-  
-  @media (min-width: 1440px) {
-    .navegacao__box {
-      max-width: 80%;
-    }
-  
-    .header {
-      min-height: 90vh;
-    }
-  
-    .navegacao__itens li {
-      font-size: 24px;
-      margin: 0 16px;
-    }
-  
-    .principal {
-      max-width: 650px;
-    }
-  
-    .principal__titulo {
-      font-size: 26px;
-      padding: 40px 200px 0px px;
-    }
-  
-    .principal__sub {
-      font-size: 18px;
-      padding: 0px 400px 0px 0px;
-    }
-   
-  }
-  /*-------- MEU CSS--------*/
-  
-  .banner-historia {
+
+  .rodape__principal {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 485;
   }
+
+  .rodape__logo img {
+    max-width: 300px;
+  }
+
+  .rodape__navegacao > li {
+    font-size: 14px;
+  }
+
+  .rodape__redes-sociais img {
+    max-width: 45px;
+    margin-right: 8px;
+  }
+}
+
+/* --- DESKTOP--- --- DESKTOP--- --- DESKTOP--- --- DESKTOP---   */
+
+@media (min-width: 1440px) {
+  .navegacao__box {
+    max-width: 80%;
+  }
+
+  .header {
+    min-height: 90vh;
+  }
+
+  .navegacao__itens li {
+    font-size: 24px;
+    margin: 0 16px;
+  }
+
+  .principal {
+    max-width: 650px;
+  }
+
+  .principal__titulo {
+    font-size: 26px;
+    padding: 40px 200px 0px px;
+  }
+
+  .principal__sub {
+    font-size: 18px;
+    padding: 0px 400px 0px 0px;
+  }
+ 
+}
+/*-------- MEU CSS--------*/
+
+.banner-historia {
+  width: 100%;
+  height: 485;
+}
+
+/*----- TEST, GALERIA MARAVILHOSAS -----*/
+.flex-galeria{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+.flex-galeria > div{
+/*flex: 350px 200px 200px;*/
+margin: 10px
+}
+
+.fami1, 
+.fami2{
+  width: 210px;
+  height: 200px;
+}
+.fami4{
+  width: 200px;
+  height: 250px;
+}
+
+
+/*-----TEST, QUEM SOU EU*/
+
+.flex-quemSou{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 800px; 
+  margin: 0 auto;
+  color: #63458a
   
-  /*----- TEST, GALERIA MARAVILHOSAS -----*/
-  .flex-galeria{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0 auto;
-    justify-content: space-around;
-    align-items: center;
-   
-  }
-  .flex-galeria > div{
-  /*flex: 350px 200px 200px;*/
-  margin: 10px
-  }
+}
+.flex-quemSou > div{
+flex: 1 1 200px;
+margin: 10px;
+ 
+}
+.paragrafo-sobreMim{
+  text-align: justify;
+  margin: 2px;
+  color: #63458a
   
-  .fami1, 
-  .fami2{
-    width: 210px;
-    height: 200px;
-  }
-  .fami4{
-    width: 200px;
-    height: 250px;
-  }
-  
-  
-  /*-----TEST, QUEM SOU EU*/
-  
-  .flex-quemSou{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 800px; 
-    margin: 0 auto;
-    color: #63458a
-    
-  }
-  .flex-quemSou > div{
-  flex: 1 1 200px;
-  margin: 10px;
-   
-  }
-  .paragrafo-sobreMim{
-    text-align: justify;
-    margin: 2px;
-    color: #63458a
-    
-  }
-  .destaque{
-    font-size: 1.4em; 
-  }
-  .linha{
-    text-align: center;
-    color: #63458a
-  }
-  
-  .titulo-inicial{
-    text-align: center;
-    color: #63458a;
-  }
-  .outras-maravilhosas{
-    text-align: center;
-  }
-  .header-perfil{
-    filter: invert(30%) sepia(44%) saturate(5645%) hue-rotate(356deg) brightness(94%) contrast(110%);
-  }
-  .gitHub{
-    filter: invert(31%) sepia(9%) saturate(3338%) hue-rotate(230deg) brightness(88%) contrast(84%);
-  }
-  .quemSou_foto:hover {
-    transform: translate(0, -10px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-  }
+}
+.destaque{
+  font-size: 1.4em; 
+}
+.linha{
+  text-align: center;
+  color: #63458a
+}
+
+.titulo-inicial{
+  text-align: center;
+  color: #63458a;
+}
+.outras-maravilhosas{
+  text-align: center;
+}
+.header-perfil{
+  filter: invert(30%) sepia(44%) saturate(5645%) hue-rotate(356deg) brightness(94%) contrast(110%);
+}
+.gitHub{
+  filter: invert(31%) sepia(9%) saturate(3338%) hue-rotate(230deg) brightness(88%) contrast(84%);
+}
+.quemSou_foto:hover {
+  transform: translate(0, -10px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}

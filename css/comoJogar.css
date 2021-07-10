@@ -109,7 +109,7 @@ a:hover {
 
 .header {
   min-height: 40px;
-  height: 540px;
+  height: 526px;
   background: linear-gradient(rgba(0, 195, 255, 0.2), rgba(255, 0, 255, 0.2));
     
   /*background-size: cover;*/
@@ -136,7 +136,6 @@ a:hover {
   background-color: #323534;
   color: white;
   display: flex;
-
   flex-direction: column;
   align-items: center;
 }
@@ -153,219 +152,9 @@ a:hover {
   margin: 16px 0;
 }
 
-.rodape__navegacao > li {
-  font-size: 14px;
-  margin: 8px;
-}
-
-.rodape__navegacao a {
-  transition: all 0.5s;
-}
-
-.rodape__navegacao a:hover {
-  color: #c083b9;
-}
-
-.rodape__logo {
-  max-width: 200px;
-  align-items: center;
-  justify-content: center;
-}
-
-/*  --- TABLET --- --- TABLET --- */
-
-@media (min-width: 768px) {
-  /* --- NAV --- */
-  .navegacao__itens {
-    position: static;
-    display: flex;
-    padding: 0;
-    width: auto;
-  }
-
-  .navegacao__nav {
-    color: #fff;
-    margin-bottom: 0;
-  }
-
-  .navegacao__itens ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .navegacao__itens li {
-    font-size: 14px;
-    margin: 0 9px;
-  }
-
-  .navegacao__itens.ativo {
-    display: block;
-    right: 0;
-    top: 85px;
-    width: 100%;
-    background-color: #674582;
-    text-align: center;
-    padding: 48px 0;
-    transition: right 1s;
-  }
-
-  .navegacao__itens li > a {
-    transition: all 0.2s;
-  }
-
-  .navegacao__itens li > a:hover {
-    color: #c083b9;
-  }
-
-  .navegacao__menu-hamburguer {
-    display: none;
-  }
-
-  /* --- HEADER --- */
-  .header {
-    min-height: 75vh;
-    text-align: left;
-    padding: 10px 100px;
-  }
-
-  .principal__titulo {
-    font-size: 28px;
-  }
-
-  .principal__sub {
-    font-size: 18px;
-  }
-
-  .principal__btn {
-    margin: 0;
-   /* margin-left: 385px;*/
-  }
-
-  /* --- FOOTER --- */
-
-  .rodape {
-    padding-top: 0;
-  }
-
-  .rodape__principal {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  .rodape__logo img {
-    max-width: 300px;
-  }
-
-  .rodape__navegacao > li {
-    font-size: 14px;
-  }
-
-  .rodape__redes-sociais img {
-    max-width: 32px;
-    margin-right: 8px;
-  }
-}
-
-/* --- DESKTOP--- --- DESKTOP--- --- DESKTOP--- --- DESKTOP---   */
-
-@media (min-width: 1440px) {
-  .navegacao__box {
-    max-width: 80%;
-  }
-
-  .header {
-    min-height: 90vh;
-  }
-
-  .navegacao__itens li {
-    font-size: 24px;
-    margin: 0 16px;
-  }
-
-  .principal {
-    max-width: 650px;
-  }
-
-  .principal__titulo {
-    font-size: 26px;
-    padding: 40px 200px 0px px;
-  }
-
-  .principal__sub {
-    font-size: 18px;
-    padding: 0px 400px 0px 0px;
-  }
-}
-/*-------- MEU CSS--------*/
-
-.banner-historia {
-  width: 100%;
-  height: 485;
-}
-
-/*----- TEST, GALERIA MARAVILHOSAS -----*/
-.flex-galeria {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
-  margin: 0 auto;
+.auxiliar{
+  display: inline-flex;
   justify-content: space-around;
-  align-items: center;
-}
-.flex-galeria > div {
-  /*flex: 350px 200px 200px;*/
-  margin: 10px;
-}
-
-.fami1,
-.fami2 {
-  width: 210px;
-  height: 200px;
-}
-.fami4 {
-  width: 200px;
-  height: 250px;
-}
-
-/*-----TEST, QUEM SOU EU*/
-
-.flex-quemSou {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #63458a;
-}
-.flex-quemSou > div {
-  flex: 1 1 200px;
-  margin: 10px;
-}
-.paragrafo-sobreMim {
-  text-align: justify;
-  margin: 2px;
-  color: #63458a;
-}
-.destaque {
-  font-size: 1.4em;
-}
-.linha {
-  text-align: center;
-  color: #63458a;
-}
-
-.titulo-inicial {
-  text-align: center;
-  color: #63458a;
-}
-.outras-maravilhosas {
-  text-align: center;
 }
 
 /*-----------SERAAAA-------------*/
