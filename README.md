@@ -2,4 +2,4 @@
 
 ## Breve jogo Web para relaxamento.
 
-### Tecnologias Usadas: Css, javaScript e Html.
+### Tecnologias Utilizadas: Css, javaScript e Html.
