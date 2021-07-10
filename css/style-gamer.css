@@ -1,0 +1,16 @@
+body {
+  background: linear-gradient(rgba(0, 195, 255, 0.2), rgba(255, 0, 255, 0.2));
+  }
+
+  canvas {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+  .header-perfil{
+    filter: invert(30%) sepia(44%) saturate(5645%) hue-rotate(356deg) brightness(94%) contrast(110%);
+  }
+  
